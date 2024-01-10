@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!--This is is our bean -->
+	<bean name="emp" class="com.springcore.collections.emp">
+		<property name="name" value="Faraz Dasurakr" />
+		<property name="phones">
+			<list>
+				<value>098765456</value>
+				<value>9876545634</value>
+				<value>0987654567</value>
+			</list>
+		</property>
+		<property name="address">
+			<set>
+				<value>766,thane</value>
+				<value>76,mumbai</value>
+				<value>8788,navimumbai</value>
+			</set>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="java" value="2months"></entry>
+				<entry key="python" value="6months"></entry>
+				<entry key="c" value="1 week"></entry>
+			</map>
+		</property>
+		<property name="props">
+			<props>
+				<prop key="name">Faraz</prop>
+				<prop key="designation">Developer</prop>
+			</props>
+		</property>
+
+	</bean>
+
+</beans>

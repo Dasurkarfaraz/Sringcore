@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ <context:annotation-config/>
+
+<!--This is is our bean -->
+	<!-- <bean class="com.springcore.lifecycle.lifecycleExample" name="LifeExample">
+	<property  name="AndroidTesting" value="Passed"/>
+	<property name="IOSTesting" value="Passed"/>
+	
+	</bean> -->
+	<!-- <bean class="com.springcore.ci.Addition" name="Addition">
+	<constructor-arg value="01.656" type="double" index="1"/>
+	<constructor-arg value="34.76" type="double" index="0"/>
+	
+	</bean> -->
+	
+	<bean class="com.springcore.lifecycle.lifecycleExample" name="ex">
+	<property name="IOSTesting" value="Pass" />
+	<property name="AndroidTesting" value="Pass" />
+	</bean>
+
+</beans>
